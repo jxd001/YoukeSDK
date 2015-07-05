@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266D1B437C5900ECCAC3 /* libidn.a */; };
+		4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266E1B437C5900ECCAC3 /* libPingSDK.a */; };
+		4D3026791B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */; };
+		4D30267A1B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026701B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel */; };
+		4D30267B1B437C5900ECCAC3 /* XMPPRoom.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026711B437C5900ECCAC3 /* XMPPRoom.xcdatamodel */; };
+		4D30267C1B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026721B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel */; };
+		4D30267D1B437C5900ECCAC3 /* XMPPRoster.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026731B437C5900ECCAC3 /* XMPPRoster.xcdatamodel */; };
+		4D30267E1B437C5900ECCAC3 /* XMPPvCard.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026741B437C5900ECCAC3 /* XMPPvCard.xcdatamodel */; };
+		4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */; };
+		4D3026811B437DBB00ECCAC3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */; };
+		4D3026831B437DE800ECCAC3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026821B437DE800ECCAC3 /* libxml2.dylib */; };
+		9A09270C1B4374F100918238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270B1B4374F100918238 /* main.m */; };
+		9A09270F1B4374F100918238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270E1B4374F100918238 /* AppDelegate.m */; };
+		9A0927121B4374F100918238 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0927111B4374F100918238 /* ViewController.m */; };
+		9A0927151B4374F100918238 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927131B4374F100918238 /* Main.storyboard */; };
+		9A0927171B4374F100918238 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927161B4374F100918238 /* Images.xcassets */; };
+		9A09271A1B4374F100918238 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927181B4374F100918238 /* LaunchScreen.xib */; };
+		9A0927441B4375B400918238 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0927431B4375B400918238 /* libresolv.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A0927201B4374F100918238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A0926FE1B4374F100918238 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A0927051B4374F100918238;
+			remoteInfo = "集成有客";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D30266D1B437C5900ECCAC3 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
+		4D30266E1B437C5900ECCAC3 /* libPingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPingSDK.a; sourceTree = "<group>"; };
+		4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPCapabilities.xcdatamodel; sourceTree = "<group>"; };
+		4D3026701B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPMessageArchiving.xcdatamodel; sourceTree = "<group>"; };
+		4D3026711B437C5900ECCAC3 /* XMPPRoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPRoom.xcdatamodel; sourceTree = "<group>"; };
+		4D3026721B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPRoomHybrid.xcdatamodel; sourceTree = "<group>"; };
+		4D3026731B437C5900ECCAC3 /* XMPPRoster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPRoster.xcdatamodel; sourceTree = "<group>"; };
+		4D3026741B437C5900ECCAC3 /* XMPPvCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPvCard.xcdatamodel; sourceTree = "<group>"; };
+		4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YoukeBundle.bundle; sourceTree = "<group>"; };
+		4D3026761B437C5900ECCAC3 /* YoukeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoukeSDK.h; sourceTree = "<group>"; };
+		4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		4D3026821B437DE800ECCAC3 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		9A0927061B4374F100918238 /* 集成有客.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "集成有客.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A09270A1B4374F100918238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A09270B1B4374F100918238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A09270D1B4374F100918238 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A09270E1B4374F100918238 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A0927101B4374F100918238 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9A0927111B4374F100918238 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9A0927141B4374F100918238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A0927161B4374F100918238 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9A0927191B4374F100918238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9A09271F1B4374F100918238 /* 集成有客Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "集成有客Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A0927431B4375B400918238 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A0927031B4374F100918238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3026831B437DE800ECCAC3 /* libxml2.dylib in Frameworks */,
+				4D3026811B437DBB00ECCAC3 /* libsqlite3.dylib in Frameworks */,
+				9A0927441B4375B400918238 /* libresolv.dylib in Frameworks */,
+				4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */,
+				4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A09271C1B4374F100918238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D30266C1B437C5900ECCAC3 /* YoukeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4D30266D1B437C5900ECCAC3 /* libidn.a */,
+				4D30266E1B437C5900ECCAC3 /* libPingSDK.a */,
+				4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */,
+				4D3026701B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel */,
+				4D3026711B437C5900ECCAC3 /* XMPPRoom.xcdatamodel */,
+				4D3026721B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel */,
+				4D3026731B437C5900ECCAC3 /* XMPPRoster.xcdatamodel */,
+				4D3026741B437C5900ECCAC3 /* XMPPvCard.xcdatamodel */,
+				4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */,
+				4D3026761B437C5900ECCAC3 /* YoukeSDK.h */,
+			);
+			path = YoukeSDK;
+			sourceTree = "<group>";
+		};
+		9A0926FD1B4374F100918238 = {
+			isa = PBXGroup;
+			children = (
+				4D3026821B437DE800ECCAC3 /* libxml2.dylib */,
+				4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */,
+				9A0927431B4375B400918238 /* libresolv.dylib */,
+				9A0927081B4374F100918238 /* 集成有客 */,
+				9A0927071B4374F100918238 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A0927071B4374F100918238 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A0927061B4374F100918238 /* 集成有客.app */,
+				9A09271F1B4374F100918238 /* 集成有客Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A0927081B4374F100918238 /* 集成有客 */ = {
+			isa = PBXGroup;
+			children = (
+				4D30266C1B437C5900ECCAC3 /* YoukeSDK */,
+				9A09270D1B4374F100918238 /* AppDelegate.h */,
+				9A09270E1B4374F100918238 /* AppDelegate.m */,
+				9A0927101B4374F100918238 /* ViewController.h */,
+				9A0927111B4374F100918238 /* ViewController.m */,
+				9A0927131B4374F100918238 /* Main.storyboard */,
+				9A0927161B4374F100918238 /* Images.xcassets */,
+				9A0927181B4374F100918238 /* LaunchScreen.xib */,
+				9A0927091B4374F100918238 /* Supporting Files */,
+			);
+			path = "集成有客";
+			sourceTree = "<group>";
+		};
+		9A0927091B4374F100918238 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A09270A1B4374F100918238 /* Info.plist */,
+				9A09270B1B4374F100918238 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A0927051B4374F100918238 /* 集成有客 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A0927291B4374F100918238 /* Build configuration list for PBXNativeTarget "集成有客" */;
+			buildPhases = (
+				9A0927021B4374F100918238 /* Sources */,
+				9A0927031B4374F100918238 /* Frameworks */,
+				9A0927041B4374F100918238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "集成有客";
+			productName = "集成有客";
+			productReference = 9A0927061B4374F100918238 /* 集成有客.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A09271E1B4374F100918238 /* 集成有客Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A09272C1B4374F100918238 /* Build configuration list for PBXNativeTarget "集成有客Tests" */;
+			buildPhases = (
+				9A09271B1B4374F100918238 /* Sources */,
+				9A09271C1B4374F100918238 /* Frameworks */,
+				9A09271D1B4374F100918238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A0927211B4374F100918238 /* PBXTargetDependency */,
+			);
+			name = "集成有客Tests";
+			productName = "集成有客Tests";
+			productReference = 9A09271F1B4374F100918238 /* 集成有客Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A0926FE1B4374F100918238 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = com.cym;
+				TargetAttributes = {
+					9A0927051B4374F100918238 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					9A09271E1B4374F100918238 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 9A0927051B4374F100918238;
+					};
+				};
+			};
+			buildConfigurationList = 9A0927011B4374F100918238 /* Build configuration list for PBXProject "YoukeSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A0926FD1B4374F100918238;
+			productRefGroup = 9A0927071B4374F100918238 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A0927051B4374F100918238 /* 集成有客 */,
+				9A09271E1B4374F100918238 /* 集成有客Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A0927041B4374F100918238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0927151B4374F100918238 /* Main.storyboard in Resources */,
+				4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */,
+				9A09271A1B4374F100918238 /* LaunchScreen.xib in Resources */,
+				9A0927171B4374F100918238 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A09271D1B4374F100918238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A0927021B4374F100918238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0927121B4374F100918238 /* ViewController.m in Sources */,
+				4D30267C1B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel in Sources */,
+				9A09270F1B4374F100918238 /* AppDelegate.m in Sources */,
+				4D30267B1B437C5900ECCAC3 /* XMPPRoom.xcdatamodel in Sources */,
+				4D30267A1B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel in Sources */,
+				9A09270C1B4374F100918238 /* main.m in Sources */,
+				4D30267D1B437C5900ECCAC3 /* XMPPRoster.xcdatamodel in Sources */,
+				4D3026791B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel in Sources */,
+				4D30267E1B437C5900ECCAC3 /* XMPPvCard.xcdatamodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A09271B1B4374F100918238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A0927211B4374F100918238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A0927051B4374F100918238 /* 集成有客 */;
+			targetProxy = 9A0927201B4374F100918238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A0927131B4374F100918238 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A0927141B4374F100918238 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A0927181B4374F100918238 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A0927191B4374F100918238 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A0927271B4374F100918238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9A0927281B4374F100918238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A09272A1B4374F100918238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: qizhong feng (L53RMXZS6K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qizhong feng (L53RMXZS6K)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/集成有客",
+				);
+				INFOPLIST_FILE = "集成有客/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/集成有客/YoukeSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "289d87fc-3b71-4500-8c08-da9f168525cd";
+			};
+			name = Debug;
+		};
+		9A09272B1B4374F100918238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/集成有客",
+				);
+				INFOPLIST_FILE = "集成有客/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/集成有客/YoukeSDK",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "289d87fc-3b71-4500-8c08-da9f168525cd";
+			};
+			name = Release;
+		};
+		9A09272D1B4374F100918238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "集成有客Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/集成有客.app/集成有客";
+			};
+			name = Debug;
+		};
+		9A09272E1B4374F100918238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "集成有客Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/集成有客.app/集成有客";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A0927011B4374F100918238 /* Build configuration list for PBXProject "YoukeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A0927271B4374F100918238 /* Debug */,
+				9A0927281B4374F100918238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A0927291B4374F100918238 /* Build configuration list for PBXNativeTarget "集成有客" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A09272A1B4374F100918238 /* Debug */,
+				9A09272B1B4374F100918238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A09272C1B4374F100918238 /* Build configuration list for PBXNativeTarget "集成有客Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A09272D1B4374F100918238 /* Debug */,
+				9A09272E1B4374F100918238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A0926FE1B4374F100918238 /* Project object */;
+}
