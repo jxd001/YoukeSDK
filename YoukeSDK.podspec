@@ -2,9 +2,6 @@ Pod::Spec.new do |s|
   s.name             = "YoukeSDK"
   s.version          = "1.0.0"
   s.summary          = "YoukeSDK帮助你的APP快速构建客服系统。"
-  s.description      = <<-DESC
-                       YoukeSDK帮助你看APP快速构建客服系统.
-                       DESC
   s.homepage         = "https://github.com/jxd001/YoukeSDK"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
@@ -23,6 +20,6 @@ Pod::Spec.new do |s|
   # s.ios.exclude_files = 'Classes/osx'
   # s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
-  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
+  s.frameworks = 'libresolv', 'libsqlite3', 'libxml2'
 
 end
