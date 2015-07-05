@@ -1,5 +1,5 @@
 # YoukeSDK
-YoukeSDK  is a easy way to help app have custom service function.
+YoukeSDK 帮助你的APP快速构建客服系统。
 
 <br>
 ### 1、介绍
@@ -46,7 +46,6 @@ libxml2.dylib
 ```  
 <center>
 ![2015-06-24/558a12ed91242](http://box.kancloud.cn/2015-06-24_558a12ed91242.png)
-</center>
 
 <br>
 ### 4、实现数据分析
@@ -105,7 +104,8 @@ libxml2.dylib
 
 <br>
 ### 7、更换皮肤
-更换皮肤功能主要用于修改客服聊天列表界面、聊天详情界面、客服人员详情界面、FAQ界面等的导航栏颜色和导航文字的颜色。如需修改icon等图片资源，请按步骤操作：在YoukeBundle.bundle文件上点击鼠标右键，选择“显示包内容”，找到对应的图片替换即可，注意图片名称和尺寸要相同。
+更换皮肤功能主要用于修改客服聊天列表界面、聊天详情界面、客服人员详情界面、FAQ界面等的导航栏颜色和导航文字的颜色。
+如需修改icon等图片资源，请按步骤操作：在YoukeBundle.bundle文件上点击鼠标右键，选择“显示包内容”，找到对应的图片替换即可，注意图片名称和尺寸要相同。
 ```objective-c
 /**
  *
