@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/NAME'
 
   s.platform     = :ios, '7.0'
-  # s.ios.deployment_target = '5.0'
+  # s.ios.deployment_target = '7.0'
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
