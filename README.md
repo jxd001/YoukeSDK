@@ -13,25 +13,29 @@ YoukeSDK帮助您快速构建客服系统。
 
 <br>
 ### 2、集成方法
-2.1 下载 [iOS SDK](http://www.youkesdk.com/download/index.html) ，解压缩后得到 YoukeSDK 文件夹，把 YoukeSDK 文件夹拖入Xcode项目工程中。  
-2.2 在Xcode的Build Settings>Other Linker Flags>添加`-ObjC`。  
-2.3 Xcode切换到Build Phases选项卡，选择Link Binary With Libraries，点击+号，导入以下链接库：
+
+2.1 安装方式一：通过cocoapods安装：
+`pod 'YoukeSDK'`
+
+2.2 安装方式二：下载 [iOS SDK](http://www.youkesdk.com/download/index.html) ，解压缩后得到 YoukeSDK 文件夹，把 YoukeSDK 文件夹拖入Xcode项目工程中。  
+2.3 在Xcode的Build Settings>Other Linker Flags>添加`-ObjC`。  
+2.4 Xcode切换到Build Phases选项卡，选择Link Binary With Libraries，点击+号，导入以下链接库：
 ~~~
 libresolv.dylib  
 libsqlite3.dylib  
 libxml2.dylib
 ~~~
 
-2.4 在appdelegate里导入YoukeSDK.h
+2.5 在appdelegate里导入YoukeSDK.h
 ~~~
 #import "YoukeSDK.h"
 ~~~
-2.5、获取Appkey，进入[YoukeSDK](http://t.youkesdk.com/)后台，注册账号并登录，登录后在左边菜单中选择 开发者>AppKey> 复制企业APPKEY
+2.6 获取Appkey，进入[YoukeSDK](http://t.youkesdk.com/)后台，注册账号并登录，登录后在左边菜单中选择 开发者>AppKey> 复制企业APPKEY
 <center>
 ![2015-06-23/5588cd1d1186a](http://box.kancloud.cn/2015-06-23_5588cd1d1186a.png)
 </center>
 <br>
-2.6 在didFinishLaunchingWithOptions中加入以下代码，将“企业APPKEY”改成上一步得到的APPKEY，集成完成。
+2.7 在didFinishLaunchingWithOptions中加入以下代码，将“企业APPKEY”改成上一步得到的APPKEY，集成完成。
 ~~~
 //注册有客
 [YoukeSDK registerYouKeWithAppKey:@"企业APPKEY"];
