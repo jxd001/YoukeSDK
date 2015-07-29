@@ -5,13 +5,12 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/jxd001/YoukeSDK"
   s.license          = 'MIT'
   s.author           = { "jxd001" => "http://weibo.com/jxd001" }
-  s.source           = { :git => "https://github.com/jxd001/YoukeSDK.git", :tag => '1.0.0'
-
+  s.source           = { :git => "https://github.com/jxd001/YoukeSDK.git", :tag => '1.0.0' }
   s.platform     = :ios, '7.0'
   s.requires_arc = true
-
   s.source_files = 'YoukeSDK/*'
-
-  s.frameworks = 'libresolv', 'libsqlite3', 'libxml2'
+  #s.frameworks = 'resolv', 'sqlite3', 'xml2'
+  s.library = 'resolv', 'sqlite3', 'xml2'
+  s.vendored_libraries = 'YoukeSDK/libidn.a', 'YoukeSDK/libPingSDK.a'
 
 end
