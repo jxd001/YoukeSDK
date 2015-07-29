@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'YoukeSDK/*'
-  #s.frameworks = 'resolv', 'sqlite3', 'xml2'
-  s.library = 'resolv', 'sqlite3', 'xml2'
+  s.libraries = 'resolv', 'sqlite3', 'xml2'
   s.vendored_libraries = 'YoukeSDK/libidn.a', 'YoukeSDK/libPingSDK.a'
-
+  s.resources = 'YoukeSDK/YoukeBundle.bundle', 'YoukeSDK/skin.plist'
 end
