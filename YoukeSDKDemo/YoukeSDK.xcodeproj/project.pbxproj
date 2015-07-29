@@ -18,6 +18,7 @@
 		4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */; };
 		4D3026811B437DBB00ECCAC3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */; };
 		4D3026831B437DE800ECCAC3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026821B437DE800ECCAC3 /* libxml2.dylib */; };
+		4D38C4C41B68C56200E1674C /* skin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D38C4C31B68C56200E1674C /* skin.plist */; };
 		9A09270C1B4374F100918238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270B1B4374F100918238 /* main.m */; };
 		9A09270F1B4374F100918238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270E1B4374F100918238 /* AppDelegate.m */; };
 		9A0927121B4374F100918238 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0927111B4374F100918238 /* ViewController.m */; };
@@ -50,6 +51,7 @@
 		4D3026761B437C5900ECCAC3 /* YoukeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoukeSDK.h; sourceTree = "<group>"; };
 		4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		4D3026821B437DE800ECCAC3 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		4D38C4C31B68C56200E1674C /* skin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = skin.plist; sourceTree = "<group>"; };
 		9A0927061B4374F100918238 /* 集成有客.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "集成有客.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A09270A1B4374F100918238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A09270B1B4374F100918238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		4D30266C1B437C5900ECCAC3 /* YoukeSDK */ = {
 			isa = PBXGroup;
 			children = (
+				4D38C4C31B68C56200E1674C /* skin.plist */,
 				4D30266D1B437C5900ECCAC3 /* libidn.a */,
 				4D30266E1B437C5900ECCAC3 /* libPingSDK.a */,
 				4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0927151B4374F100918238 /* Main.storyboard in Resources */,
+				4D38C4C41B68C56200E1674C /* skin.plist in Resources */,
 				4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */,
 				9A09271A1B4374F100918238 /* LaunchScreen.xib in Resources */,
 				9A0927171B4374F100918238 /* Images.xcassets in Resources */,
@@ -400,7 +404,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "289d87fc-3b71-4500-8c08-da9f168525cd";
+				PROVISIONING_PROFILE = "6606815c-0945-47ef-97df-08140f575e5b";
 			};
 			name = Debug;
 		};
@@ -421,7 +425,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "289d87fc-3b71-4500-8c08-da9f168525cd";
+				PROVISIONING_PROFILE = "6606815c-0945-47ef-97df-08140f575e5b";
 			};
 			name = Release;
 		};
