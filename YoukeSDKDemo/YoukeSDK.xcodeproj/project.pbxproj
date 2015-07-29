@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266D1B437C5900ECCAC3 /* libidn.a */; };
 		4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266E1B437C5900ECCAC3 /* libPingSDK.a */; };
-		4D3026791B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */; };
-		4D30267A1B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026701B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel */; };
-		4D30267B1B437C5900ECCAC3 /* XMPPRoom.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026711B437C5900ECCAC3 /* XMPPRoom.xcdatamodel */; };
-		4D30267C1B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026721B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel */; };
-		4D30267D1B437C5900ECCAC3 /* XMPPRoster.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026731B437C5900ECCAC3 /* XMPPRoster.xcdatamodel */; };
-		4D30267E1B437C5900ECCAC3 /* XMPPvCard.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 4D3026741B437C5900ECCAC3 /* XMPPvCard.xcdatamodel */; };
 		4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */; };
 		4D3026811B437DBB00ECCAC3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */; };
 		4D3026831B437DE800ECCAC3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026821B437DE800ECCAC3 /* libxml2.dylib */; };
@@ -41,12 +35,6 @@
 /* Begin PBXFileReference section */
 		4D30266D1B437C5900ECCAC3 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		4D30266E1B437C5900ECCAC3 /* libPingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPingSDK.a; sourceTree = "<group>"; };
-		4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPCapabilities.xcdatamodel; sourceTree = "<group>"; };
-		4D3026701B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPMessageArchiving.xcdatamodel; sourceTree = "<group>"; };
-		4D3026711B437C5900ECCAC3 /* XMPPRoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPRoom.xcdatamodel; sourceTree = "<group>"; };
-		4D3026721B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPRoomHybrid.xcdatamodel; sourceTree = "<group>"; };
-		4D3026731B437C5900ECCAC3 /* XMPPRoster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPRoster.xcdatamodel; sourceTree = "<group>"; };
-		4D3026741B437C5900ECCAC3 /* XMPPvCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XMPPvCard.xcdatamodel; sourceTree = "<group>"; };
 		4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YoukeBundle.bundle; sourceTree = "<group>"; };
 		4D3026761B437C5900ECCAC3 /* YoukeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoukeSDK.h; sourceTree = "<group>"; };
 		4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -95,12 +83,6 @@
 				4D38C4C31B68C56200E1674C /* skin.plist */,
 				4D30266D1B437C5900ECCAC3 /* libidn.a */,
 				4D30266E1B437C5900ECCAC3 /* libPingSDK.a */,
-				4D30266F1B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel */,
-				4D3026701B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel */,
-				4D3026711B437C5900ECCAC3 /* XMPPRoom.xcdatamodel */,
-				4D3026721B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel */,
-				4D3026731B437C5900ECCAC3 /* XMPPRoster.xcdatamodel */,
-				4D3026741B437C5900ECCAC3 /* XMPPvCard.xcdatamodel */,
 				4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */,
 				4D3026761B437C5900ECCAC3 /* YoukeSDK.h */,
 			);
@@ -255,14 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A0927121B4374F100918238 /* ViewController.m in Sources */,
-				4D30267C1B437C5900ECCAC3 /* XMPPRoomHybrid.xcdatamodel in Sources */,
 				9A09270F1B4374F100918238 /* AppDelegate.m in Sources */,
-				4D30267B1B437C5900ECCAC3 /* XMPPRoom.xcdatamodel in Sources */,
-				4D30267A1B437C5900ECCAC3 /* XMPPMessageArchiving.xcdatamodel in Sources */,
 				9A09270C1B4374F100918238 /* main.m in Sources */,
-				4D30267D1B437C5900ECCAC3 /* XMPPRoster.xcdatamodel in Sources */,
-				4D3026791B437C5900ECCAC3 /* XMPPCapabilities.xcdatamodel in Sources */,
-				4D30267E1B437C5900ECCAC3 /* XMPPvCard.xcdatamodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
