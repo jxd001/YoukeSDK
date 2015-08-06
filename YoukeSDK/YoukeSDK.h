@@ -40,7 +40,6 @@
 +(void)contactCustomServiceWithViewController:(UIViewController*)ctrl;
 
 
-
 /**
  *  @author jxd, 15-05-25 17:05:13
  *
@@ -67,6 +66,44 @@
                        Email:(NSString *)email
                           QQ:(NSString *)qq
                         Text:(NSString *)text;
+
+
+/**
+ *  @author jxd, 15-08-04 00:08:42
+ *
+ *  将用户与openfire绑定(用于点对点聊天)
+ *
+ *  @param userId    用户id
+ *  @param userPhoto 用户头像
+ *  @param userName  用户昵称
+ *  @param tell      用户手机号
+ *  @param email     用户email
+ *  @param qq        用户qq号
+ *  @param otherText 其他信息
+ */
++(void)bindOpenFireWithUserId:(NSString*)userId UserPhoto:(NSString*)userPhoto UserName:(NSString*)userName Tell:(NSString*)tell Email:(NSString*)email QQ:(NSString*)qq OtherText:(NSString*)otherText;
+
+/**
+ *  @author jxd, 15-07-31 15:07:26
+ *
+ *  实现点对点聊天，比如和APP用户体系内的某个“商家”
+ *
+ *  @param myUserId     登录用户的用户id
+ *  @param toUserId     聊天对象的用户id
+ *  @param ctrl         从哪个viewcontroller进入
+ */
++(void)openPointToPointTalkViewControllerWithMyUserid:(NSString*)myUserId ToUserId:(NSString*)toUserId ViewController:(UIViewController*)ctrl;
+
+/**
+ *  @author jxd, 15-07-31 14:07:32
+ *
+ *  实现点对点聊天，打开聊天列表(用于商家、店主等类型用户与普通用户聊天)
+ *
+ *  @param myUserId     登录用户id
+ *  @param ctrl         从哪个viewcontroller弹出
+ */
++(void)openPointToPointTalkListWithMyUserId:(NSString*)myUserId ViewController:(UIViewController*)ctrl;
+
 /**
  *  @author jxd, 15-06-15 13:06:55
  *
@@ -94,6 +131,8 @@
  *  @param ctrl 从哪个viewcontroller弹出该页面
  */
 +(void)openHelpViewControllerWithViewController:(UIViewController*)ctrl;
+
+
 
 @end
 
