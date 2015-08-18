@@ -11,6 +11,18 @@
 
 @interface YoukeSDK : NSObject
 
+/**
+ *  @author jxd, 15-08-07 12:08:30
+ *
+ *  获取新消息数BLOCK
+ *
+ *  @param newMessageCount      新消息数
+ *  @param messageContent       消息内容
+ *  @param messageFrom          消息发送者名字
+ */
+typedef void(^NEWMESSAGE_BLOCK)(NSInteger newMessageCount, NSString *messageContent, NSString *messageFrom);
+@property (nonatomic, copy) NEWMESSAGE_BLOCK  newMessageBlocker;
+
 
 /**
  *  初始化对象
@@ -28,7 +40,7 @@
  *  @param appKey   AppKey
  *
  */
-+(void)registerYouKeWithAppKey:(NSString *)appKey;
++ (void)registerYouKeWithAppKey:(NSString *)appKey;
 
 
 /**
@@ -37,7 +49,7 @@
  *  弹出客服聊天界面
  *
  */
-+(void)contactCustomServiceWithViewController:(UIViewController*)ctrl;
++ (void)contactCustomServiceWithViewController:(UIViewController*)ctrl;
 
 
 /**
@@ -56,7 +68,7 @@
  *  @param qq           QQ号（app账号体系内的QQ号）
  *  @param text         备注信息
  */
-+(void)visitGoodsWithGoodsId:(NSString *)goodsId
++ (void)visitGoodsWithGoodsId:(NSString *)goodsId
                   GoodsTitle:(NSString *)goodsTitle
                   GoodsPrice:(NSString *)goodsPrice
                     GoodsImg:(NSString *)goodsImg
@@ -81,7 +93,8 @@
  *  @param qq        用户qq号
  *  @param otherText 其他信息
  */
-+(void)bindOpenFireWithUserId:(NSString*)userId UserPhoto:(NSString*)userPhoto UserName:(NSString*)userName Tell:(NSString*)tell Email:(NSString*)email QQ:(NSString*)qq OtherText:(NSString*)otherText;
++ (void)bindOpenFireWithUserId:(NSString*)userId UserPhoto:(NSString*)userPhoto UserName:(NSString*)userName Tell:(NSString*)tell Email:(NSString*)email QQ:(NSString*)qq OtherText:(NSString*)otherText;
+
 
 /**
  *  @author jxd, 15-07-31 15:07:26
@@ -92,7 +105,8 @@
  *  @param toUserId     聊天对象的用户id
  *  @param ctrl         从哪个viewcontroller进入
  */
-+(void)openPointToPointTalkViewControllerWithMyUserid:(NSString*)myUserId ToUserId:(NSString*)toUserId ViewController:(UIViewController*)ctrl;
++ (void)openPointToPointTalkViewControllerWithMyUserid:(NSString*)myUserId ToUserId:(NSString*)toUserId ViewController:(UIViewController*)ctrl;
+
 
 /**
  *  @author jxd, 15-07-31 14:07:32
@@ -102,25 +116,7 @@
  *  @param myUserId     登录用户id
  *  @param ctrl         从哪个viewcontroller弹出
  */
-+(void)openPointToPointTalkListWithMyUserId:(NSString*)myUserId ViewController:(UIViewController*)ctrl;
-
-/**
- *  @author jxd, 15-06-15 13:06:55
- *
- *  获取当前正在浏览的商品
- *
- *
- *  @return 商品信息 ZPFCommodityObject
- */
--(id)getCurrentCommodity;
-
-
-/**
- *  @author jxd, 15-05-25 17:05:03
- *
- *  离开商品页面时调用
- */
-+(void)leaveGoods;
++ (void)openPointToPointTalkListWithMyUserId:(NSString*)myUserId ViewController:(UIViewController*)ctrl;
 
 
 /**
@@ -130,8 +126,36 @@
  *
  *  @param ctrl 从哪个viewcontroller弹出该页面
  */
-+(void)openHelpViewControllerWithViewController:(UIViewController*)ctrl;
++ (void)openHelpViewControllerWithViewController:(UIViewController*)ctrl;
 
+
+/**
+ *  @author jxd, 15-08-07 10:08:37
+ *
+ *  获取最新未读消息数
+ *
+ *  @return 未读消息数
+ */
++ (NSInteger)getNewMessageCount;
+
+
+/**
+ *  @author jxd, 15-06-15 13:06:55
+ *
+ *  获取当前正在浏览的商品
+ *
+ *
+ *  @return 商品信息 ZPFCommodityObject
+ */
+- (id)getCurrentCommodity;
+
+
+/**
+ *  @author jxd, 15-05-25 17:05:03
+ *
+ *  离开商品页面时调用
+ */
++ (void)leaveGoods;
 
 
 @end
