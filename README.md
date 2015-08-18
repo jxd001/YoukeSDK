@@ -121,7 +121,7 @@ libxml2.dylib
 ### 8、点对点单聊
 用于实现如用户和商家聊天、商家和上级代理商聊天等场景。
 8.1、将用户与openfire绑定
-```objc
+~~~
 /**
  *  @param userId    用户id
  *  @param userPhoto 用户头像
@@ -138,33 +138,31 @@ libxml2.dylib
                            Email:@"8765645@qq.com"
                               QQ:@"8765645"
                        OtherText:@""];
-```
+~~~
 
 8.2、用户打开商家的聊天窗口
-```objc
+~~~
 /**
  *  @param myUserId 登录用户的用户id
  *  @param toUserId  聊天对象的用户id
  *  @param ctrl     从哪个viewcontroller进入
  */
 [YoukeSDK openPointToPointTalkViewControllerWithMyUserid:@"10003" ToUserId:@"10004" ViewController:self];
-```
+~~~
 
 8.3、商家打开聊天列表
-```objc
+~~~
 /**
  *  @param myUserId 登录用户的用户id
  *  @param toUserId  聊天对象的用户id
  *  @param ctrl     从哪个viewcontroller进入
  */
 [YoukeSDK openPointToPointTalkListWithMyUserId:@"10004" ViewController:self];
-```
-<center>
-![Alt text](./2015-08-04_55c0723c0d83a.png)
-</center>
+~~~
+<center>![2015-08-04/55c0723c0d83a](http://box.kancloud.cn/2015-08-04_55c0723c0d83a.png)</center>
 
 8.4、获取最新聊天消息未读数
-```objc
+~~~
 //方式一：直接获取最新未读数
 NSInteger count = [YoukeSDK getNewMessageCount];
 NSLog(@"getNewMessageCount:%@",@(count));
@@ -181,7 +179,8 @@ NSLog(@"getNewMessageCount:%@",@(count));
     NSLog(@"messageContent:%@",@(messageContent));
     NSLog(@"messageFrom:%@",@(messageFrom));
 };
-```
+~~~
+
 
 <br>
 ### 9、更换皮肤
