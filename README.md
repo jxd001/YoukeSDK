@@ -118,8 +118,73 @@ libxml2.dylib
 <center>![2015-06-23/5589478a99cad](http://box.kancloud.cn/2015-06-23_5589478a99cad.png)
 </center>
 
+### 8、点对点单聊
+用于实现如用户和商家聊天、商家和上级代理商聊天等场景。
+8.1、将用户与openfire绑定
+```objc
+/**
+ *  @param userId    用户id
+ *  @param userPhoto 用户头像
+ *  @param userName  用户昵称
+ *  @param tell      用户手机号
+ *  @param email     用户email
+ *  @param qq        用户qq号
+ *  @param otherText 其他信息
+ */
+[YoukeSDK bindOpenFireWithUserId:@"10003"
+                       UserPhoto:@"http://ww1.sinaimg.cn/bmiddle/97647685jw1euqexfregfj20w80l6q5t.jpg"
+                        UserName:@"jxd002"
+                            Tell:@"18515153245"
+                           Email:@"8765645@qq.com"
+                              QQ:@"8765645"
+                       OtherText:@""];
+```
+
+8.2、用户打开商家的聊天窗口
+```objc
+/**
+ *  @param myUserId 登录用户的用户id
+ *  @param toUserId  聊天对象的用户id
+ *  @param ctrl     从哪个viewcontroller进入
+ */
+[YoukeSDK openPointToPointTalkViewControllerWithMyUserid:@"10003" ToUserId:@"10004" ViewController:self];
+```
+
+8.3、商家打开聊天列表
+```objc
+/**
+ *  @param myUserId 登录用户的用户id
+ *  @param toUserId  聊天对象的用户id
+ *  @param ctrl     从哪个viewcontroller进入
+ */
+[YoukeSDK openPointToPointTalkListWithMyUserId:@"10004" ViewController:self];
+```
+<center>
+![Alt text](./2015-08-04_55c0723c0d83a.png)
+</center>
+
+8.4、获取最新聊天消息未读数
+```objc
+//方式一：直接获取最新未读数
+NSInteger count = [YoukeSDK getNewMessageCount];
+NSLog(@"getNewMessageCount:%@",@(count));
+    
+/**
+ *  方式二：Block方式实时监听新消息数提醒
+ *  @param newMessageCount 新消息数量
+ *  @param messageContent  新消息内容
+ *  @param messageFrom     新消息发送者名
+ */
+[YoukeSDK sharedInstance].newMessageBlocker = ^(NSInteger newMessageCount, NSString *messageContent, NSString *messageFrom)
+{
+    NSLog(@"getNewMessageCount:%@",@(newMessageCount));
+    NSLog(@"messageContent:%@",@(messageContent));
+    NSLog(@"messageFrom:%@",@(messageFrom));
+};
+```
+
 <br>
-### 8、更换皮肤
+### 9、更换皮肤
 更换皮肤功能主要用于修改导航栏颜色、导航文字的颜色，修改聊天气泡颜色、聊天文字颜色。修改方法是替换skin.plist中对应的value：
 
 ```objective-c
