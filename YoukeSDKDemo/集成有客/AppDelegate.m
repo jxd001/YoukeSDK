@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YoukeSDK.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [YoukeSDK registerYouKeWithAppKey:@"bd8e2fc4bf803b8f5b81821059f7121a"];
+    
+    
+    ViewController *controller = [[ViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    controller.title = @"功能列表";
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:YES];
+    
+    //设置window
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

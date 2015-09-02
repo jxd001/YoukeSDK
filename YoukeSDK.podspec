@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "YoukeSDK"
   s.version          = "1.0.5"
-  s.summary          = "YoukeSDK帮助你的APP快速构建客服系统。"
+  s.summary          = "YoukeSDK帮助你的APP快速构建APP客服系统。"
   s.homepage         = "https://github.com/jxd001/YoukeSDK"
   s.license          = 'MIT'
   s.author           = { "jxd001" => "http://weibo.com/jxd001" }
