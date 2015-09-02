@@ -1,14 +1,25 @@
 ### 1、介绍
 版本： V1.0.0 
 
-YoukeSDK帮助您快速构建客服系统。  
+YoukeSDK帮助您快速构建APP内客服系统。  
+
 主要实现功能：  
-* 即时沟通  
-* 提交工单  
+* APP用户与客服即时沟通  
+* 工单系统  
 * 数据分析  
 * 触碰营销  
 * FAQ功能  
+* 点对点单聊
 * 更换皮肤
+
+更新记录：
+* 2015.8.10 增加：点对点单聊功能；
+* 2015.8.12 增加：获取消息未读数以及最新消息内容接口；
+* 2015.8.31 增加：在聊天详情显示正在浏览的订单功能；
+* 2015.8.31 增加：在聊天详情显示的订单可以点击进入订单详情的接口；
+* 2015.9.1   增加：获取聊天列表的数据的接口；
+* 2015.9.2 增加：聊天详情页中的商品或订单被点击的事件；
+
 
 <br>
 ### 2、集成方法
@@ -139,6 +150,31 @@ libxml2.dylib
                               QQ:@"8765645"
                        OtherText:@""];
 ~~~
+如果要让商家看到我正在浏览的商品，在商品页面加入下面两个方法即可
+```
+//获取到商品信息时
+[YoukeSDK visitGoodsWithGoodsId:goodsId
+                     GoodsTitle:goodsName
+                     GoodsPrice:goodsPrice
+                       GoodsImg:goodsImage
+                       UserName:nil
+                      UserPhoto:nil
+                     CallNumber:nil
+                          Email:nil
+                             QQ:nil
+                           Text:nil];    
+//离开页面时
+[YoukeSDK leaveGoods];
+```
+如果要让商家看到我正在浏览的订单，在打开商家聊天窗口之前调用以下方法即可
+```
+[YoukeSDK visitOrderWithOrderId:@"9888444368"
+                      OrderTime:@"08-21 12:20"
+                     GoodsTitle:@"2014新款 漂流木帆布包男"
+                     GoodsImage:@"http://img10.360buyimg.com/N6/s60x60_g13/M04/00/08/rBEhVFHeVO8IAAAAAAOkd-fxdusAAA8awB92ecAA6SP334.jpg"
+                     GoodsPrice:@"99"];
+```
+
 
 8.2、用户打开商家的聊天窗口
 ~~~objective-c
@@ -180,6 +216,32 @@ NSLog(@"getNewMessageCount:%@",@(count));
     NSLog(@"messageFrom:%@",@(messageFrom));
 };
 ~~~
+8.5、获取最近聊天列表的数据（商家使用），用于需要自定义聊天列表的需求
+```objc
+//获取聊天列表
+[YoukeSDK getPointToPointTalkListDataWithMyUserid:@"444" success:^(NSArray *listArray) {
+    NSLog(@"listArray:%@",listArray);
+    listData = listArray;
+    [table reloadData];
+} failure:^(NSError *error) {
+    NSLog(@"error:%@",error);
+}];
+```
+
+8.6、聊天详情页点击商品或订单的事件
+```
+//聊天详情页中的商品被点击
+[YoukeSDK sharedInstance].goodsClickBlocker = ^(NSString *goodsId, UIViewController *viewController)
+{
+    NSLog(@"goodsId:%@",goodsId);
+};
+
+//聊天详情页中的订单被点击
+[YoukeSDK sharedInstance].orderClickBlocker = ^(NSString *orderId, UIViewController *viewController)
+{
+    NSLog(@"orderId:%@",orderId);
+};
+```
 
 
 <br>
