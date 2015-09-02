@@ -151,7 +151,7 @@ libxml2.dylib
                        OtherText:@""];
 ~~~
 如果要让商家看到我正在浏览的商品，在商品页面加入下面两个方法即可
-```
+```objective-c
 //获取到商品信息时
 [YoukeSDK visitGoodsWithGoodsId:goodsId
                      GoodsTitle:goodsName
@@ -229,7 +229,7 @@ NSLog(@"getNewMessageCount:%@",@(count));
 ```
 
 8.6、聊天详情页点击商品或订单的事件
-```
+```objective-c
 //聊天详情页中的商品被点击
 [YoukeSDK sharedInstance].goodsClickBlocker = ^(NSString *goodsId, UIViewController *viewController)
 {
