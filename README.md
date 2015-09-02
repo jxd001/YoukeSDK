@@ -167,7 +167,7 @@ libxml2.dylib
 [YoukeSDK leaveGoods];
 ```
 如果要让商家看到我正在浏览的订单，在打开商家聊天窗口之前调用以下方法即可
-```
+```objective-c
 [YoukeSDK visitOrderWithOrderId:@"9888444368"
                       OrderTime:@"08-21 12:20"
                      GoodsTitle:@"2014新款 漂流木帆布包男"
