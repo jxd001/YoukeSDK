@@ -288,7 +288,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 ```
 openssl pkcs12 -in cert.p12 -out MyApnsCert.pem -nodes
 ```
-9.6、登录http://t.youkesdk.com ，进入以下菜单：
+9.6、登录http://t.youkesdk.com ，进入以下菜单：<br>
 ![Alt text](./74D1A3BD-3E94-4D1D-8FDD-41945D6422A3.png)
 
 选择和证书对应的环境上传证书，如果有密码填入密码，点击保存，再点击生效，如果显示“生效中”即成功；
