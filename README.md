@@ -283,7 +283,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 > 如果是开发环境，证书名类似“Apple Development IOS Push Services：com.xxx.xxx”；<br>
 > 如果是发布证书，证书名类似“Apple Production IOS Push Services：com.xxx.xxx”；
 
-9.4、在找到的证书上点击右键，选择“导出”，导出p12证书的时候选择存放的地址，以及填写证书密码，密码可填可不填；
+9.4、在找到的证书上点击右键，选择“导出”，导出p12证书的时候选择存放的地址，以及填写证书密码，密码可填可不填；<br>
 9.5、打开终端，用“cd”命令进入你的证书所在的目录，执行以下命令，将证书转成pem格式，注意修改证书名称是否和你的对应；
 ```
 openssl pkcs12 -in cert.p12 -out MyApnsCert.pem -nodes
