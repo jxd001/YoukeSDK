@@ -289,7 +289,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 openssl pkcs12 -in cert.p12 -out MyApnsCert.pem -nodes
 ```
 9.6、登录http://t.youkesdk.com ，进入以下菜单：<br>
-![Alt text](./74D1A3BD-3E94-4D1D-8FDD-41945D6422A3.png)
+![2015-07-15/55a62e23a1f08](http://box.kancloud.cn/2015-10-10_5618c64eaa2d2.png)
 
 选择和证书对应的环境上传证书，如果有密码填入密码，点击保存，再点击生效，如果显示“生效中”即成功；
 >如果收不到推送，最常见的问题是Archive的时候Build Settings>Code Signing里的配置和提交的推送证书不匹配；
