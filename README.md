@@ -1,5 +1,5 @@
 ### 1、介绍
-版本： V1.0.0 
+版本： V1.0.6
 
 YoukeSDK帮助您快速构建APP内客服系统。  
 
@@ -10,6 +10,7 @@ YoukeSDK帮助您快速构建APP内客服系统。
 * 触碰营销  
 * FAQ功能  
 * 点对点单聊
+* 消息推送
 * 更换皮肤
 
 更新记录：
@@ -19,6 +20,8 @@ YoukeSDK帮助您快速构建APP内客服系统。
 * 2015.8.31 增加：在聊天详情显示的订单可以点击进入订单详情的接口；
 * 2015.9.1   增加：获取聊天列表的数据的接口；
 * 2015.9.2 增加：聊天详情页中的商品或订单被点击的事件；
+* 2015.9.7 增加：绑定devicetoken，实现消息推送功能；
+* 2015.10.10 优化：适配iOS9；
 
 
 <br>
@@ -33,9 +36,9 @@ pod 'YoukeSDK'
 2.3 在Xcode的Build Settings>Other Linker Flags>添加`-ObjC`。  
 2.4 Xcode切换到Build Phases选项卡，选择Link Binary With Libraries，点击+号，导入以下链接库：
 ```objective-c
-libresolv.dylib  
-libsqlite3.dylib  
-libxml2.dylib
+libresolv.dylib  （xcode7为libresolv.tbd）
+libsqlite3.dylib  （xcode7为lbsqlite3.tbd）
+libxml2.dylib （xcode7为libxml2.tbd）
 ```
 
 2.5 在appdelegate里导入YoukeSDK.h
@@ -179,21 +182,34 @@ libxml2.dylib
 8.2、用户打开商家的聊天窗口
 ~~~objective-c
 /**
- *  @param myUserId 登录用户的用户id
- *  @param toUserId  聊天对象的用户id
- *  @param ctrl     从哪个viewcontroller进入
+ *  @param myUserId     登录用户的用户id
+ *  @param toUserId     聊天对象的用户id
+ *  @param ctrl         从哪个viewcontroller进入
+ *  @param showTips     是否显示提示框
+ *  @param success      成功回调，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param failure      失败回调，返回失败信息
  */
-[YoukeSDK openPointToPointTalkViewControllerWithMyUserid:@"10003" ToUserId:@"10004" ViewController:self];
+[YoukeSDK openPointToPointTalkViewControllerWithMyUserid:@"10001" ToUserId:@"10002" ViewController:self ShowTips:NO Success:^(NSArray *listArray) {
+    //
+} Failure:^(NSError *error) {
+    NSLog(@"error:%@",[error localizedDescription]);
+}];
 ~~~
 
 8.3、商家打开聊天列表
 ~~~objective-c
 /**
- *  @param myUserId 登录用户的用户id
- *  @param toUserId  聊天对象的用户id
- *  @param ctrl     从哪个viewcontroller进入
+ *  @param myUserId     登录用户id
+ *  @param ctrl         从哪个viewcontroller弹出
+ *  @param showTips     是否显示提示框
+ *  @param success      成功block，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param failure      失败回调，返回失败信息
  */
-[YoukeSDK openPointToPointTalkListWithMyUserId:@"10004" ViewController:self];
+[YoukeSDK openPointToPointTalkListWithMyUserId:@"10001" ViewController:self ShowTips:NO Success:^(NSArray *listArray) {
+    //
+} Failure:^(NSError *error) {
+    NSLog(@"error:%@",[error localizedDescription]);
+}];
 ~~~
 <center>![2015-08-04/55c0723c0d83a](http://box.kancloud.cn/2015-08-04_55c0723c0d83a.png)</center>
 
@@ -218,13 +234,20 @@ NSLog(@"getNewMessageCount:%@",@(count));
 ~~~
 8.5、获取最近聊天列表的数据（商家使用），用于需要自定义聊天列表的需求
 ```objc
-//获取聊天列表
-[YoukeSDK getPointToPointTalkListDataWithMyUserid:@"444" success:^(NSArray *listArray) {
-    NSLog(@"listArray:%@",listArray);
+/**
+ *  获取点对点聊天列表数据，用于开发者需要自定义聊天列表界面的需求
+ *
+ *  @param userid       用户自己的用户id
+ *  @param showTips     是否显示提示框
+ *  @param success      成功回调，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param failure      失败回调，返回失败信息
+ *
+ */
+[YoukeSDK getPointToPointTalkListDataWithMyUserid:@"10001" ShowTips:NO Success:^(NSArray *listArray) {
     listData = listArray;
     [table reloadData];
-} failure:^(NSError *error) {
-    NSLog(@"error:%@",error);
+} Failure:^(NSError *error) {
+    NSLog(@"error:%@",[error localizedDescription]);
 }];
 ```
 
@@ -245,7 +268,35 @@ NSLog(@"getNewMessageCount:%@",@(count));
 
 
 <br>
-### 9、更换皮肤
+### 9、实现APNS推送功能
+YoukeSDK的消息推送支持客服对访客的消息推送、点对点聊天的消息推送，集成方法如下：
+9.1、在Appdelegate中加入以下代码：
+```objc
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    [YoukeSDK registerDeviceToken:deviceToken];
+}
+```
+9.2、登录developer.apple.com制作推送证书，下载证书后双击导入系统钥匙串；
+9.3、打开系统钥匙串，找到你刚才导入的推送证书；
+> 如果是开发环境，证书名类似“Apple Development IOS Push Services：com.xxx.xxx”；
+> 如果是发布证书，证书名类似“Apple Production IOS Push Services：com.xxx.xxx”；
+
+9.4、在找到的证书上点击右键，选择“导出”，导出p12证书的时候选择存放的地址，以及填写证书密码，密码可填可不填；
+9.5、打开终端，用“cd”命令进入你的证书所在的目录，执行以下命令，将证书转成pem格式，注意修改证书名称是否和你的对应；
+```
+openssl pkcs12 -in cert.p12 -out MyApnsCert.pem -nodes
+```
+9.6、登录http://t.youkesdk.com ，进入以下菜单：
+![Alt text](./74D1A3BD-3E94-4D1D-8FDD-41945D6422A3.png)
+
+选择和证书对应的环境上传证书，如果有密码填入密码，点击保存，再点击生效，如果显示“生效中”即成功；
+>如果收不到推送，最常见的问题是Archive的时候Build Settings>Code Signing里的配置和提交的推送证书不匹配；
+>还要注意，YoukeSDK只在接收方离线的时候才会发推送，在线的时候不会发推送，测试方法：直接上划关闭APP后测试推送。
+
+<br>
+### 10、更换皮肤
 更换皮肤功能主要用于修改导航栏颜色、导航文字的颜色，修改聊天气泡颜色、聊天文字颜色。修改方法是替换skin.plist中对应的value：
 
 ```objective-c
