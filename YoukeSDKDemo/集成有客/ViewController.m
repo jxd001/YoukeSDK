@@ -92,11 +92,10 @@
 #endif
     
     //获取聊天列表
-    [YoukeSDK getPointToPointTalkListDataWithMyUserid:@"444" success:^(NSArray *listArray) {
-        NSLog(@"listArray:%@",listArray);
+    [YoukeSDK getPointToPointTalkListDataWithMyUserid:@"444" ShowTips:YES Success:^(NSArray *listArray) {
         listData = listArray;
         [table reloadData];
-    } failure:^(NSError *error) {
+    } Failure:^(NSError *error) {
         NSLog(@"error:%@",error);
     }];
 }
@@ -225,26 +224,21 @@
                                  GoodsImage:@"http://img10.360buyimg.com/N6/s60x60_g13/M04/00/08/rBEhVFHeVO8IAAAAAAOkd-fxdusAAA8awB92ecAA6SP334.jpg"
                                  GoodsPrice:@"99"];
             
-            /**
-             *
-             *  实现点对点聊天，比如和APP用户体系内的某个“商家”
-             *
-             *  @param myUserId 登录用户的用户id
-             *  @param toUserId  聊天对象的用户id
-             *  @param ctrl     从哪个viewcontroller进入
-             */
-            [YoukeSDK openPointToPointTalkViewControllerWithMyUserid:@"888" ToUserId:@"444" ViewController:self];
+            //实现点对点聊天，比如和APP用户体系内的某个“商家”
+            [YoukeSDK openPointToPointTalkViewControllerWithMyUserid:@"888" ToUserId:@"444" ViewController:self ShowTips:YES Success:^(NSArray *listArray) {
+                //
+            } Failure:^(NSError *error) {
+                //
+            }];
+            
         }
         else if(indexPath.row==1){
-            /**
-             *
-             *  实现点对点聊天，比如和APP用户体系内的某个“商家”
-             *
-             *  @param myUserId 登录用户的用户id
-             *  @param toUserId  聊天对象的用户id
-             *  @param ctrl     从哪个viewcontroller进入
-             */
-            [YoukeSDK openPointToPointTalkListWithMyUserId:@"444" ViewController:self];
+            //实现点对点聊天，比如和APP用户体系内的某个“商家”
+            [YoukeSDK openPointToPointTalkListWithMyUserId:@"444" ViewController:self ShowTips:YES Success:^(NSArray *listArray) {
+                //
+            } Failure:^(NSError *error) {
+                //
+            }];
         }
     }
     else if(indexPath.section==2){
@@ -253,7 +247,11 @@
     else {
         //直接进入聊天界面
         YoukeMessageListObject *obj = listData[indexPath.row];
-        [YoukeSDK openPointToPointTalkViewControllerWithMyUserid:obj.fromUid ToUserId:obj.toUid ViewController:self];
+        [YoukeSDK openPointToPointTalkListWithMyUserId:obj.fromUid ViewController:self ShowTips:YES Success:^(NSArray *listArray) {
+            //
+        } Failure:^(NSError *error) {
+            //
+        }];
     }
     
 }

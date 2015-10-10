@@ -17,18 +17,21 @@
  */
 @interface YoukeMessageListObject : NSObject
 
-@property (strong, nonatomic) NSString *fromUid;
-@property (strong, nonatomic) NSString *toUid;
-@property (strong, nonatomic) NSString *userName;
-@property (strong, nonatomic) NSString *userAvatar;
-@property (strong, nonatomic) NSString *userPhone;
-@property (strong, nonatomic) NSString *messageContent;
-@property (strong, nonatomic) NSString *messageTime;
+@property (strong, nonatomic) NSString *fromUid;        //“我”的uid（此值和toUid是加密后的，进入聊天界面的时候可以直接传uid原值，也可传此加密后值）
+@property (strong, nonatomic) NSString *toUid;          //对方的uid
+@property (strong, nonatomic) NSString *userName;       //对方的昵称
+@property (strong, nonatomic) NSString *userAvatar;     //对方的头像
+@property (strong, nonatomic) NSString *userPhone;      //对方的电话
+@property (strong, nonatomic) NSString *messageContent; //最新一条消息内容
+@property (strong, nonatomic) NSString *messageTime;    //消息时间
+@property (strong, nonatomic) NSString *unreadCount;    //消息未读数
 
 @end
 
 
 @interface YoukeSDK : NSObject
+
+#pragma mark - 回调
 
 /**
  *  @author jxd, 15-08-07 12:08:30
@@ -67,6 +70,17 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 @property (nonatomic, copy) ORDERCLICK_BLOCK orderClickBlocker;
 
 
+#pragma mark - 初始化
+
+
+/**
+ *  @author jxd, 15-09-15 09:09:56
+ *
+ *  打开关闭log
+ *
+ *  @param openLog
+ */
++ (void)openLog:(BOOL)openLog;
 
 /**
  *  初始化对象
@@ -88,6 +102,18 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 
 
 /**
+ *  @author jxd, 15-09-07 15:09:45
+ *
+ *  注册devicetoken，实现推送功能
+ *
+ *  @param deviceToken devicetoken
+ */
++ (void)registerDeviceToken:(id)deviceToken;
+
+
+#pragma mark - 联系客服
+
+/**
  *  @author jxd, 15-05-16 16:05:19
  *
  *  弹出客服聊天界面
@@ -95,6 +121,8 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  */
 + (void)contactCustomServiceWithViewController:(UIViewController*)ctrl;
 
+
+#pragma mark - 提交商品信息以及订单信息给客服
 
 /**
  *  @author jxd, 15-05-25 17:05:13
@@ -151,6 +179,29 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 
 
 /**
+ *  @author jxd, 15-06-15 13:06:55
+ *
+ *  获取当前正在浏览的商品
+ *
+ *
+ *  @return 商品信息 ZPFCommodityObject
+ */
+- (id)getCurrentCommodity;
+
+
+/**
+ *  @author jxd, 15-08-28 11:08:44
+ *
+ *  获取正在浏览的订单
+ *
+ *  @return ZPFOrderObject
+ */
+- (id)getCurrentOrder;
+
+
+#pragma mark - 点对点单聊
+
+/**
  *  @author jxd, 15-08-04 00:08:42
  *
  *  将用户与openfire绑定(用于点对点聊天)
@@ -174,8 +225,16 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  *  @param myUserId     登录用户的用户id
  *  @param toUserId     聊天对象的用户id
  *  @param ctrl         从哪个viewcontroller进入
+ *  @param showTips     是否显示提示框
+ *  @param success      成功block，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param failure      失败回调，返回失败信息
  */
-+ (void)openPointToPointTalkViewControllerWithMyUserid:(NSString*)myUserId ToUserId:(NSString*)toUserId ViewController:(UIViewController*)ctrl;
++ (void)openPointToPointTalkViewControllerWithMyUserid:(NSString*)myUserId
+                                              ToUserId:(NSString*)toUserId
+                                        ViewController:(UIViewController*)ctrl
+                                              ShowTips:(BOOL)showTips
+                                               Success:(void (^)(NSArray *listArray))success
+                                               Failure:(void (^)(NSError *error))failure;
 
 
 /**
@@ -185,8 +244,15 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  *
  *  @param myUserId     登录用户id
  *  @param ctrl         从哪个viewcontroller弹出
+ *  @param showTips     是否显示提示框
+ *  @param success      成功block，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param failure      失败回调，返回失败信息
  */
-+ (void)openPointToPointTalkListWithMyUserId:(NSString*)myUserId ViewController:(UIViewController*)ctrl;
++ (void)openPointToPointTalkListWithMyUserId:(NSString*)myUserId
+                              ViewController:(UIViewController*)ctrl
+                                    ShowTips:(BOOL)showTips
+                                     Success:(void (^)(NSArray *listArray))success
+                                     Failure:(void (^)(NSError *error))failure;
 
 
 /**
@@ -194,23 +260,16 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  *
  *  获取点对点聊天列表数据，用于开发者需要自定义聊天列表界面的需求
  *
- *  @param userid  用户自己的用户id
- *  @param success 成功block，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param userid       用户自己的用户id
+ *  @param showTips     是否显示提示框
+ *  @param success      成功block，成功的block会返回聊天列表的数组，数组元素为YoukeMessageListObject类型
+ *  @param failure      失败回调，返回失败信息
  *
  */
 + (void)getPointToPointTalkListDataWithMyUserid:(NSString*)userid
-                                        success:(void (^)(NSArray *listArray)) success
-                                        failure:(void (^)(NSError *error)) failure;
-
-
-/**
- *  @author jxd, 15-06-17 06:06:37
- *
- *  打开帮助列表页面
- *
- *  @param ctrl 从哪个viewcontroller弹出该页面
- */
-+ (void)openHelpViewControllerWithViewController:(UIViewController*)ctrl;
+                                       ShowTips:(BOOL)showTips
+                                        Success:(void (^)(NSArray *listArray))success
+                                        Failure:(void (^)(NSError *error))failure;
 
 
 /**
@@ -223,24 +282,17 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 + (NSInteger)getNewMessageCount;
 
 
-/**
- *  @author jxd, 15-06-15 13:06:55
- *
- *  获取当前正在浏览的商品
- *
- *
- *  @return 商品信息 ZPFCommodityObject
- */
-- (id)getCurrentCommodity;
+#pragma mark - 打开帮助
+
 
 /**
- *  @author jxd, 15-08-28 11:08:44
+ *  @author jxd, 15-06-17 06:06:37
  *
- *  获取正在浏览的订单
+ *  打开帮助列表页面
  *
- *  @return ZPFOrderObject
+ *  @param ctrl 从哪个viewcontroller弹出该页面
  */
-- (id)getCurrentOrder;
++ (void)openHelpViewControllerWithViewController:(UIViewController*)ctrl;
 
 
 

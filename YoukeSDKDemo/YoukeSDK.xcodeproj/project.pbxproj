@@ -10,8 +10,6 @@
 		4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266D1B437C5900ECCAC3 /* libidn.a */; };
 		4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266E1B437C5900ECCAC3 /* libPingSDK.a */; };
 		4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */; };
-		4D3026811B437DBB00ECCAC3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */; };
-		4D3026831B437DE800ECCAC3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3026821B437DE800ECCAC3 /* libxml2.dylib */; };
 		4D38C4C41B68C56200E1674C /* skin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D38C4C31B68C56200E1674C /* skin.plist */; };
 		4D8995021B96917F00C8E307 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994E21B96917F00C8E307 /* MKAnnotationView+WebCache.m */; };
 		4D8995031B96917F00C8E307 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994E41B96917F00C8E307 /* NSData+ImageContentType.m */; };
@@ -29,12 +27,14 @@
 		4D89950F1B96918000C8E307 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994FD1B96917F00C8E307 /* UIImageView+HighlightedWebCache.m */; };
 		4D8995101B96918000C8E307 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994FF1B96917F00C8E307 /* UIImageView+WebCache.m */; };
 		4D8995111B96918000C8E307 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8995011B96917F00C8E307 /* UIView+WebCacheOperation.m */; };
+		4DD049011BC8B3BA00CBFC60 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD048FB1BC8A5FB00CBFC60 /* libxml2.tbd */; };
+		4DD049021BC8B42400CBFC60 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD048FF1BC8A7F900CBFC60 /* libresolv.tbd */; };
+		4DD049031BC8B47000CBFC60 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD048F91BC8A5D900CBFC60 /* libsqlite3.tbd */; };
 		9A09270C1B4374F100918238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270B1B4374F100918238 /* main.m */; };
 		9A09270F1B4374F100918238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270E1B4374F100918238 /* AppDelegate.m */; };
 		9A0927121B4374F100918238 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0927111B4374F100918238 /* ViewController.m */; };
 		9A0927171B4374F100918238 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927161B4374F100918238 /* Images.xcassets */; };
 		9A09271A1B4374F100918238 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927181B4374F100918238 /* LaunchScreen.xib */; };
-		9A0927441B4375B400918238 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0927431B4375B400918238 /* libresolv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,6 @@
 		4D30266E1B437C5900ECCAC3 /* libPingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPingSDK.a; sourceTree = "<group>"; };
 		4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YoukeBundle.bundle; sourceTree = "<group>"; };
 		4D3026761B437C5900ECCAC3 /* YoukeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoukeSDK.h; sourceTree = "<group>"; };
-		4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		4D3026821B437DE800ECCAC3 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		4D38C4C31B68C56200E1674C /* skin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = skin.plist; sourceTree = "<group>"; };
 		4D8994E11B96917F00C8E307 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		4D8994E21B96917F00C8E307 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
@@ -88,6 +86,10 @@
 		4D8994FF1B96917F00C8E307 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		4D8995001B96917F00C8E307 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		4D8995011B96917F00C8E307 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		4DD048F91BC8A5D900CBFC60 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		4DD048FB1BC8A5FB00CBFC60 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		4DD048FD1BC8A7EF00CBFC60 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		4DD048FF1BC8A7F900CBFC60 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		9A0927061B4374F100918238 /* 集成有客.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "集成有客.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A09270A1B4374F100918238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A09270B1B4374F100918238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,7 +100,6 @@
 		9A0927161B4374F100918238 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A0927191B4374F100918238 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9A09271F1B4374F100918238 /* 集成有客Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "集成有客Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A0927431B4375B400918238 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +107,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D3026831B437DE800ECCAC3 /* libxml2.dylib in Frameworks */,
-				4D3026811B437DBB00ECCAC3 /* libsqlite3.dylib in Frameworks */,
-				9A0927441B4375B400918238 /* libresolv.dylib in Frameworks */,
+				4DD049031BC8B47000CBFC60 /* libsqlite3.tbd in Frameworks */,
+				4DD049021BC8B42400CBFC60 /* libresolv.tbd in Frameworks */,
+				4DD049011BC8B3BA00CBFC60 /* libxml2.tbd in Frameworks */,
 				4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */,
 				4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */,
 			);
@@ -179,9 +180,10 @@
 		9A0926FD1B4374F100918238 = {
 			isa = PBXGroup;
 			children = (
-				4D3026821B437DE800ECCAC3 /* libxml2.dylib */,
-				4D3026801B437DBB00ECCAC3 /* libsqlite3.dylib */,
-				9A0927431B4375B400918238 /* libresolv.dylib */,
+				4DD048FF1BC8A7F900CBFC60 /* libresolv.tbd */,
+				4DD048FD1BC8A7EF00CBFC60 /* libz.tbd */,
+				4DD048FB1BC8A5FB00CBFC60 /* libxml2.tbd */,
+				4DD048F91BC8A5D900CBFC60 /* libsqlite3.tbd */,
 				9A0927081B4374F100918238 /* 集成有客 */,
 				9A0927071B4374F100918238 /* Products */,
 			);
@@ -461,6 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: qizhong feng (L53RMXZS6K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: qizhong feng (L53RMXZS6K)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/集成有客",
@@ -482,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/集成有客",
