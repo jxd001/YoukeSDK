@@ -269,9 +269,8 @@ NSLog(@"getNewMessageCount:%@",@(count));
 
 <br>
 ### 9、实现APNS推送功能
-YoukeSDK的消息推送支持客服对访客的消息推送、点对点聊天的消息推送，集成方法如下：
-
-####9.1、在Appdelegate中加入以下代码：
+YoukeSDK的消息推送支持客服对访客的消息推送、点对点聊天的消息推送，集成方法如下：<br>
+9.1、在Appdelegate中加入以下代码：
 ```objc
 - (void)application:(UIApplication *)application
 didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
@@ -279,17 +278,17 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
     [YoukeSDK registerDeviceToken:deviceToken];
 }
 ```
-####9.2、登录developer.apple.com制作推送证书，下载证书后双击导入系统钥匙串；
-####9.3、打开系统钥匙串，找到你刚才导入的推送证书；
-> 如果是开发环境，证书名类似“Apple Development IOS Push Services：com.xxx.xxx”；
+9.2、登录developer.apple.com制作推送证书，下载证书后双击导入系统钥匙串；<br>
+9.3、打开系统钥匙串，找到你刚才导入的推送证书；<br>
+> 如果是开发环境，证书名类似“Apple Development IOS Push Services：com.xxx.xxx”；<br>
 > 如果是发布证书，证书名类似“Apple Production IOS Push Services：com.xxx.xxx”；
 
-####9.4、在找到的证书上点击右键，选择“导出”，导出p12证书的时候选择存放的地址，以及填写证书密码，密码可填可不填；
-####9.5、打开终端，用“cd”命令进入你的证书所在的目录，执行以下命令，将证书转成pem格式，注意修改证书名称是否和你的对应；
+9.4、在找到的证书上点击右键，选择“导出”，导出p12证书的时候选择存放的地址，以及填写证书密码，密码可填可不填；
+9.5、打开终端，用“cd”命令进入你的证书所在的目录，执行以下命令，将证书转成pem格式，注意修改证书名称是否和你的对应；
 ```
 openssl pkcs12 -in cert.p12 -out MyApnsCert.pem -nodes
 ```
-####9.6、登录http://t.youkesdk.com ，进入以下菜单：
+9.6、登录http://t.youkesdk.com ，进入以下菜单：
 ![Alt text](./74D1A3BD-3E94-4D1D-8FDD-41945D6422A3.png)
 
 选择和证书对应的环境上传证书，如果有密码填入密码，点击保存，再点击生效，如果显示“生效中”即成功；
