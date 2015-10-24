@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/YoukeSDK"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/YoukeSDK/YoukeSDK" "$(PODS_ROOT)/YoukeSDK/YoukeSDK"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/YoukeSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"PingSDK" -l"YoukeSDK" -l"idn" -l"resolv" -l"sqlite3" -l"xml2"
+PODS_ROOT = ${SRCROOT}/Pods

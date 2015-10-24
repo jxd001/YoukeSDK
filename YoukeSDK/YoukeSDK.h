@@ -4,7 +4,7 @@
 //
 //  Created by ss on 15/3/23.
 //  Copyright (c) 2015年 zipingfang. All rights reserved.
-//  v1.0.6
+//  v1.0.7
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -49,7 +49,7 @@ typedef void(^NEWMESSAGE_BLOCK)(NSInteger newMessageCount, NSString *messageCont
 /**
  *  @author jxd, 15-09-01 17:09:01
  *
- *  聊天详情页的商品被点击，将通过这个bolock把商品id传出来
+ *  聊天详情页的商品被点击，将通过这个block把商品id传出来
  *
  *  @param goodsId        被点击的商品的商品id
  *  @param viewController 聊天详情页的实例变量，可以用该viewController来push或present商品详情页
@@ -282,7 +282,7 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 + (NSInteger)getNewMessageCount;
 
 
-#pragma mark - 打开帮助
+#pragma mark - 打开帮助/FAQ
 
 
 /**
@@ -294,7 +294,10 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  */
 + (void)openHelpViewControllerWithViewController:(UIViewController*)ctrl;
 
-
+/**
+ *  提醒用户注册（对应http://t.youkesdk.com后台功能中的『营销中心》访客注册』）
+ */
++ (void)remindUserToRegister;
 
 @end
 

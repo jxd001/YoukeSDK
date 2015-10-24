@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266D1B437C5900ECCAC3 /* libidn.a */; };
-		4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D30266E1B437C5900ECCAC3 /* libPingSDK.a */; };
-		4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */; };
-		4D38C4C41B68C56200E1674C /* skin.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D38C4C31B68C56200E1674C /* skin.plist */; };
 		4D8995021B96917F00C8E307 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994E21B96917F00C8E307 /* MKAnnotationView+WebCache.m */; };
 		4D8995031B96917F00C8E307 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994E41B96917F00C8E307 /* NSData+ImageContentType.m */; };
 		4D8995041B96917F00C8E307 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994E61B96917F00C8E307 /* SDImageCache.m */; };
@@ -35,6 +31,7 @@
 		9A0927121B4374F100918238 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0927111B4374F100918238 /* ViewController.m */; };
 		9A0927171B4374F100918238 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927161B4374F100918238 /* Images.xcassets */; };
 		9A09271A1B4374F100918238 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A0927181B4374F100918238 /* LaunchScreen.xib */; };
+		BCE18A7FAF5D881115AFDA7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32C4049901B7021555A6DE2D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4D30266D1B437C5900ECCAC3 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
-		4D30266E1B437C5900ECCAC3 /* libPingSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPingSDK.a; sourceTree = "<group>"; };
-		4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YoukeBundle.bundle; sourceTree = "<group>"; };
-		4D3026761B437C5900ECCAC3 /* YoukeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoukeSDK.h; sourceTree = "<group>"; };
-		4D38C4C31B68C56200E1674C /* skin.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = skin.plist; sourceTree = "<group>"; };
+		09DBE7E8A3854CBC1B439437 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		32C4049901B7021555A6DE2D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8994E11B96917F00C8E307 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		4D8994E21B96917F00C8E307 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		4D8994E31B96917F00C8E307 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -90,6 +84,7 @@
 		4DD048FB1BC8A5FB00CBFC60 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		4DD048FD1BC8A7EF00CBFC60 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		4DD048FF1BC8A7F900CBFC60 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		849D62395D96C1F4D2856B23 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0927061B4374F100918238 /* 集成有客.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "集成有客.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A09270A1B4374F100918238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A09270B1B4374F100918238 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -110,8 +105,7 @@
 				4DD049031BC8B47000CBFC60 /* libsqlite3.tbd in Frameworks */,
 				4DD049021BC8B42400CBFC60 /* libresolv.tbd in Frameworks */,
 				4DD049011BC8B3BA00CBFC60 /* libxml2.tbd in Frameworks */,
-				4D3026781B437C5900ECCAC3 /* libPingSDK.a in Frameworks */,
-				4D3026771B437C5900ECCAC3 /* libidn.a in Frameworks */,
+				BCE18A7FAF5D881115AFDA7A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,16 +119,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D30266C1B437C5900ECCAC3 /* YoukeSDK */ = {
+		45D16A710D475255AB676288 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4D38C4C31B68C56200E1674C /* skin.plist */,
-				4D30266D1B437C5900ECCAC3 /* libidn.a */,
-				4D30266E1B437C5900ECCAC3 /* libPingSDK.a */,
-				4D3026751B437C5900ECCAC3 /* YoukeBundle.bundle */,
-				4D3026761B437C5900ECCAC3 /* YoukeSDK.h */,
+				32C4049901B7021555A6DE2D /* libPods.a */,
 			);
-			path = YoukeSDK;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4D8994E01B96917F00C8E307 /* SDWebImage */ = {
@@ -186,6 +176,8 @@
 				4DD048F91BC8A5D900CBFC60 /* libsqlite3.tbd */,
 				9A0927081B4374F100918238 /* 集成有客 */,
 				9A0927071B4374F100918238 /* Products */,
+				AFD22BF4DFB099B0678DCFD1 /* Pods */,
+				45D16A710D475255AB676288 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				4D8994E01B96917F00C8E307 /* SDWebImage */,
-				4D30266C1B437C5900ECCAC3 /* YoukeSDK */,
 				9A09270D1B4374F100918238 /* AppDelegate.h */,
 				9A09270E1B4374F100918238 /* AppDelegate.m */,
 				9A0927101B4374F100918238 /* ViewController.h */,
@@ -223,6 +214,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AFD22BF4DFB099B0678DCFD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				849D62395D96C1F4D2856B23 /* Pods.debug.xcconfig */,
+				09DBE7E8A3854CBC1B439437 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A0927291B4374F100918238 /* Build configuration list for PBXNativeTarget "集成有客" */;
 			buildPhases = (
+				ECA4B33E6D333B6C0BA63A94 /* Check Pods Manifest.lock */,
 				9A0927021B4374F100918238 /* Sources */,
 				9A0927031B4374F100918238 /* Frameworks */,
 				9A0927041B4374F100918238 /* Resources */,
+				9E285F9175BE5242BC4CEB4E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,8 +305,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D38C4C41B68C56200E1674C /* skin.plist in Resources */,
-				4D30267F1B437C5900ECCAC3 /* YoukeBundle.bundle in Resources */,
 				9A09271A1B4374F100918238 /* LaunchScreen.xib in Resources */,
 				9A0927171B4374F100918238 /* Images.xcassets in Resources */,
 			);
@@ -318,6 +318,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E285F9175BE5242BC4CEB4E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA4B33E6D333B6C0BA63A94 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9A0927021B4374F100918238 /* Sources */ = {
@@ -459,6 +492,7 @@
 		};
 		9A09272A1B4374F100918238 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849D62395D96C1F4D2856B23 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: qizhong feng (L53RMXZS6K)";
@@ -471,10 +505,7 @@
 				INFOPLIST_FILE = "集成有客/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/集成有客/YoukeSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6606815c-0945-47ef-97df-08140f575e5b";
@@ -483,6 +514,7 @@
 		};
 		9A09272B1B4374F100918238 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DBE7E8A3854CBC1B439437 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -493,10 +525,7 @@
 				INFOPLIST_FILE = "集成有客/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/集成有客/YoukeSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "6606815c-0945-47ef-97df-08140f575e5b";

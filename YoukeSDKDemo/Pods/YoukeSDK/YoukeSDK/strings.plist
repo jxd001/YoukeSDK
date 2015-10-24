@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PageTitleForPointToPointTalkList</key>
+	<string>最近消息</string>
+	<key>PageTitleForUserInfo</key>
+	<string>客服资料</string>
+	<key>PageTitleForCustemerServiceList</key>
+	<string>在线客服</string>
+	<key>PageTitleForHelpList</key>
+	<string>帮助</string>
+</dict>
+</plist>

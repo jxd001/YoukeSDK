@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AE6030C0AE435E401C4DBDEE4D414F7 /* libidn.a in Sources */ = {isa = PBXBuildFile; fileRef = C07996CDCBCCFCDA27DFE578852341EA /* libidn.a */; };
+		303C1481C4F8EA21F2A6966CB74149BC /* YoukeSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02642DCD1EF0D8F3FF5B11FB39DE4EA6 /* YoukeSDK-dummy.m */; };
+		5ADBE9B46DCF1E2441DF2FF1AB9ABA57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FF625885A3C99707148CBF77CA3371 /* Foundation.framework */; };
+		67E3C82E6689A41D7176A9E2070654F9 /* YoukeSDK iOS版集成指南.pdf in Sources */ = {isa = PBXBuildFile; fileRef = 53F185F6F33772031577F462852E419F /* YoukeSDK iOS版集成指南.pdf */; };
+		7C1B04FDB5B8B384F2E5E331A5B75B08 /* libPingSDK.a in Sources */ = {isa = PBXBuildFile; fileRef = 4F1BBCFEAA86B623B97374C7E91B3639 /* libPingSDK.a */; };
+		89A5FE12FB534207EE57E012A27C2D1A /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7898C9020CA22F810065284CDEDA83E4 /* Pods-dummy.m */; };
+		B361E12913A10146F7A341E93241D095 /* skin.plist in Sources */ = {isa = PBXBuildFile; fileRef = 5ADFC8F61EC18E3F11821A314FA0EE5F /* skin.plist */; };
+		BD80E753D27F62828893B6B9A1A84D5E /* strings.plist in Sources */ = {isa = PBXBuildFile; fileRef = D05CFB8958C90636AD79ABEBBF328521 /* strings.plist */; };
+		F837B42E8CEEB318995F222FF007F7A2 /* YoukeSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE46F722A1520B66C03559DCAC1701E /* YoukeSDK.h */; };
+		F8A880EAB904498DCD52FD9CF24263CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FF625885A3C99707148CBF77CA3371 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C3CBABEF233E1A9E4116225084A72AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E44906A377A32B43BC46E687891A4C3;
+			remoteInfo = YoukeSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02642DCD1EF0D8F3FF5B11FB39DE4EA6 /* YoukeSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YoukeSDK-dummy.m"; sourceTree = "<group>"; };
+		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1A6490D5E9BF1DB006F611B512400515 /* YoukeSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YoukeSDK.xcconfig; sourceTree = "<group>"; };
+		1F5B57353925FFCD08F8495F5B381916 /* YoukeBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YoukeBundle.bundle; path = YoukeSDK/YoukeBundle.bundle; sourceTree = "<group>"; };
+		2840E27743CDFB4AB710C68291DDC298 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4404671BF32B38F02BE9E07AC62977C5 /* libYoukeSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYoukeSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4D423610EF2C2F33E0E5A36DA4889F /* YoukeSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YoukeSDK-prefix.pch"; sourceTree = "<group>"; };
+		4F1BBCFEAA86B623B97374C7E91B3639 /* libPingSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libPingSDK.a; path = YoukeSDK/libPingSDK.a; sourceTree = "<group>"; };
+		53F185F6F33772031577F462852E419F /* YoukeSDK iOS版集成指南.pdf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.pdf; name = "YoukeSDK iOS版集成指南.pdf"; path = "YoukeSDK/YoukeSDK iOS版集成指南.pdf"; sourceTree = "<group>"; };
+		5ADFC8F61EC18E3F11821A314FA0EE5F /* skin.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = skin.plist; path = YoukeSDK/skin.plist; sourceTree = "<group>"; };
+		5AE46F722A1520B66C03559DCAC1701E /* YoukeSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YoukeSDK.h; path = YoukeSDK/YoukeSDK.h; sourceTree = "<group>"; };
+		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		7898C9020CA22F810065284CDEDA83E4 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		88FF625885A3C99707148CBF77CA3371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B1CD66CF7576AA7E044715FE0C4D3AA2 /* YoukeSDK-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "YoukeSDK-Private.xcconfig"; sourceTree = "<group>"; };
+		B86E594FF7717C075569C95DBB89B8C4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		C07996CDCBCCFCDA27DFE578852341EA /* libidn.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libidn.a; path = YoukeSDK/libidn.a; sourceTree = "<group>"; };
+		D05CFB8958C90636AD79ABEBBF328521 /* strings.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = strings.plist; path = YoukeSDK/strings.plist; sourceTree = "<group>"; };
+		D84E358DF50E0D613458A1B19F960DA9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DA32A16ADC3B89D47F667EA26743A4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A880EAB904498DCD52FD9CF24263CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8316D6AC9312A39299894EB040C1C63C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADBE9B46DCF1E2441DF2FF1AB9ABA57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BBFBCC39E6FDDA5BE5EC379F3AD554 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F5B57353925FFCD08F8495F5B381916 /* YoukeBundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				88FF625885A3C99707148CBF77CA3371 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7275991BA3D121E33C26F8B07A043E53 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A6490D5E9BF1DB006F611B512400515 /* YoukeSDK.xcconfig */,
+				B1CD66CF7576AA7E044715FE0C4D3AA2 /* YoukeSDK-Private.xcconfig */,
+				02642DCD1EF0D8F3FF5B11FB39DE4EA6 /* YoukeSDK-dummy.m */,
+				4C4D423610EF2C2F33E0E5A36DA4889F /* YoukeSDK-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YoukeSDK";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A800756C143E48185CD8E4143B97880D /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BEAF49B58F3B75A1947712DCFD484F6 /* YoukeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5AE46F722A1520B66C03559DCAC1701E /* YoukeSDK.h */,
+				53F185F6F33772031577F462852E419F /* YoukeSDK iOS版集成指南.pdf */,
+				4F1BBCFEAA86B623B97374C7E91B3639 /* libPingSDK.a */,
+				C07996CDCBCCFCDA27DFE578852341EA /* libidn.a */,
+				5ADFC8F61EC18E3F11821A314FA0EE5F /* skin.plist */,
+				D05CFB8958C90636AD79ABEBBF328521 /* strings.plist */,
+				B5CF201FB0431270CFC9957A2E926C6B /* Frameworks */,
+				08BBFBCC39E6FDDA5BE5EC379F3AD554 /* Resources */,
+				7275991BA3D121E33C26F8B07A043E53 /* Support Files */,
+			);
+			path = YoukeSDK;
+			sourceTree = "<group>";
+		};
+		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
+				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				7898C9020CA22F810065284CDEDA83E4 /* Pods-dummy.m */,
+				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				B86E594FF7717C075569C95DBB89B8C4 /* Pods.debug.xcconfig */,
+				D84E358DF50E0D613458A1B19F960DA9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		A800756C143E48185CD8E4143B97880D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BEAF49B58F3B75A1947712DCFD484F6 /* YoukeSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B5CF201FB0431270CFC9957A2E926C6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2840E27743CDFB4AB710C68291DDC298 /* libPods.a */,
+				4404671BF32B38F02BE9E07AC62977C5 /* libYoukeSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DE7DB5FC26E7264A04021DCA86B8637C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F837B42E8CEEB318995F222FF007F7A2 /* YoukeSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2E44906A377A32B43BC46E687891A4C3 /* YoukeSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAF63C00C40B76ED226971185876BF1A /* Build configuration list for PBXNativeTarget "YoukeSDK" */;
+			buildPhases = (
+				6D73105C9321CCCBF0773DEEC8ED869A /* Sources */,
+				4DA32A16ADC3B89D47F667EA26743A4C /* Frameworks */,
+				DE7DB5FC26E7264A04021DCA86B8637C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoukeSDK;
+			productName = YoukeSDK;
+			productReference = 4404671BF32B38F02BE9E07AC62977C5 /* libYoukeSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8E6BEBBA426C6428B95E1F66005C02F5 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA0EB0BB9907F2286F1EAFCF18EE87EE /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				3A85AC3BD649F88F6BD70B598FAF4DDD /* Sources */,
+				8316D6AC9312A39299894EB040C1C63C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8085B67C0FB61BDF7A5A1CCD3BB78028 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 2840E27743CDFB4AB710C68291DDC298 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E6BEBBA426C6428B95E1F66005C02F5 /* Pods */,
+				2E44906A377A32B43BC46E687891A4C3 /* YoukeSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A85AC3BD649F88F6BD70B598FAF4DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A5FE12FB534207EE57E012A27C2D1A /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D73105C9321CCCBF0773DEEC8ED869A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67E3C82E6689A41D7176A9E2070654F9 /* YoukeSDK iOS版集成指南.pdf in Sources */,
+				303C1481C4F8EA21F2A6966CB74149BC /* YoukeSDK-dummy.m in Sources */,
+				7C1B04FDB5B8B384F2E5E331A5B75B08 /* libPingSDK.a in Sources */,
+				0AE6030C0AE435E401C4DBDEE4D414F7 /* libidn.a in Sources */,
+				B361E12913A10146F7A341E93241D095 /* skin.plist in Sources */,
+				BD80E753D27F62828893B6B9A1A84D5E /* strings.plist in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8085B67C0FB61BDF7A5A1CCD3BB78028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YoukeSDK;
+			target = 2E44906A377A32B43BC46E687891A4C3 /* YoukeSDK */;
+			targetProxy = 5C3CBABEF233E1A9E4116225084A72AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		052A17875CB827423D627183396CEB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19741CA4A59E45A04951F5A8F3AF33C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CD66CF7576AA7E044715FE0C4D3AA2 /* YoukeSDK-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YoukeSDK/YoukeSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3788E84766CD8BA98810D5F30547DD3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B86E594FF7717C075569C95DBB89B8C4 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		465E67292EF6AEDAEE4238DA6EB90B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1CD66CF7576AA7E044715FE0C4D3AA2 /* YoukeSDK-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YoukeSDK/YoukeSDK-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C2F25429DA9FF0981131ECE4B4B4326B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D84E358DF50E0D613458A1B19F960DA9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
+				052A17875CB827423D627183396CEB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA0EB0BB9907F2286F1EAFCF18EE87EE /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3788E84766CD8BA98810D5F30547DD3C /* Debug */,
+				C2F25429DA9FF0981131ECE4B4B4326B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAF63C00C40B76ED226971185876BF1A /* Build configuration list for PBXNativeTarget "YoukeSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				465E67292EF6AEDAEE4238DA6EB90B3C /* Debug */,
+				19741CA4A59E45A04951F5A8F3AF33C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
