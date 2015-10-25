@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.libraries = 'resolv', 'sqlite3', 'xml2'
   s.framework = 'CoreData'
   s.vendored_libraries = 'YoukeSDK/libidn.a', 'YoukeSDK/libPingSDK.a'
-  s.resources = 'YoukeSDK/YoukeBundle.bundle', 'YoukeSDK/skin.plist', 'YoukeSDK/strings.plist', 'YoukeSDK/*.{mom,momd}'
+  s.resources = 'YoukeSDK/skin.plist', 'YoukeSDK/strings.plist', 'YoukeSDK/*.{mom,momd}'
+  s.resource_bundle = 'YoukeSDK/YoukeBundle.bundle'
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 end

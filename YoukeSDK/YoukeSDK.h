@@ -4,7 +4,7 @@
 //
 //  Created by ss on 15/3/23.
 //  Copyright (c) 2015年 zipingfang. All rights reserved.
-//  v1.0.7
+//  v1.0.8
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
