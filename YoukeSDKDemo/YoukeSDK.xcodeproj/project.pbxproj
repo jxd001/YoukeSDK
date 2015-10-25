@@ -23,9 +23,6 @@
 		4D89950F1B96918000C8E307 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994FD1B96917F00C8E307 /* UIImageView+HighlightedWebCache.m */; };
 		4D8995101B96918000C8E307 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8994FF1B96917F00C8E307 /* UIImageView+WebCache.m */; };
 		4D8995111B96918000C8E307 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8995011B96917F00C8E307 /* UIView+WebCacheOperation.m */; };
-		4DD049011BC8B3BA00CBFC60 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD048FB1BC8A5FB00CBFC60 /* libxml2.tbd */; };
-		4DD049021BC8B42400CBFC60 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD048FF1BC8A7F900CBFC60 /* libresolv.tbd */; };
-		4DD049031BC8B47000CBFC60 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DD048F91BC8A5D900CBFC60 /* libsqlite3.tbd */; };
 		9A09270C1B4374F100918238 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270B1B4374F100918238 /* main.m */; };
 		9A09270F1B4374F100918238 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A09270E1B4374F100918238 /* AppDelegate.m */; };
 		9A0927121B4374F100918238 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0927111B4374F100918238 /* ViewController.m */; };
@@ -102,9 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DD049031BC8B47000CBFC60 /* libsqlite3.tbd in Frameworks */,
-				4DD049021BC8B42400CBFC60 /* libresolv.tbd in Frameworks */,
-				4DD049011BC8B3BA00CBFC60 /* libxml2.tbd in Frameworks */,
 				BCE18A7FAF5D881115AFDA7A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +229,7 @@
 				9A0927031B4374F100918238 /* Frameworks */,
 				9A0927041B4374F100918238 /* Resources */,
 				9E285F9175BE5242BC4CEB4E /* Copy Pods Resources */,
+				F8919D4ABB36FF24FEEFE7EE /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -348,6 +343,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8919D4ABB36FF24FEEFE7EE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
