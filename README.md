@@ -1,5 +1,5 @@
 ### 1、介绍
-版本：V1.0.6
+版本：V2.0
 官网：http://www.youkeyun.com
 
 有客是中国领先的智能客服云平台，为移动应用APP开发者提供智能的客服SDK，帮助企业的客服人员进行实时在线客服沟通、分析用户的访问行为轨迹、实时开展触碰式的个性化营销，实现将流量转化为销量。  
@@ -23,6 +23,7 @@
 * 2015.9.2 增加：聊天详情页中的商品或订单被点击的事件；
 * 2015.9.7 增加：绑定devicetoken，实现消息推送功能；
 * 2015.10.10 优化：适配iOS9；
+* 2015.11.7 增加：删除聊天列表中的记录
 
 
 <br>
@@ -267,6 +268,14 @@ NSLog(@"getNewMessageCount:%@",@(count));
 };
 ```
 
+8.7、删除聊天列表中的记录
+```objc
+[YoukeSDK deleteChatUserWithMyUserId:_fromUserId ToUserId:_toUserId Success:^(NSString *successTips) {
+      
+} Failure:^(NSError *error) {
+       
+}];
+```
 
 <br>
 ### 9、实现APNS推送功能
