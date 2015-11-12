@@ -19,7 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [YoukeSDK registerYouKeWithAppKey:@"bd8e2fc4bf803b8f5b81821059f7121a"];
+    [YoukeSDK openLog:YES];
+    [YoukeSDK registerYouKeWithAppKey:@"f009f5a3b89f9e7121bc4536d8f25a34"];
     
     
     ViewController *controller = [[ViewController alloc] init];

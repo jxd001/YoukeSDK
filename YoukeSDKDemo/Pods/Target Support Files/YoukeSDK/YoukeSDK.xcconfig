@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/YoukeSDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/YoukeSDK"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/YoukeSDK/YoukeSDK" $(inherited) "${PODS_ROOT}/YoukeSDK/YoukeSDK"
+OTHER_LDFLAGS = -ObjC -l"PingSDK" -l"idn" -l"resolv" -l"sqlite3" -l"xml2" -framework "CoreData"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

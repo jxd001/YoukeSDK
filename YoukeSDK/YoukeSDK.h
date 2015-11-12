@@ -273,6 +273,19 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 
 
 /**
+ *
+ *  删除聊天列表中的某条记录（用于点对点单聊）
+ *
+ *  @param myUserId     我的用户id
+ *  @param toUserId     要删除的对方的用户id
+ *
+ */
++ (void)deleteChatUserWithMyUserId:(NSString*)myUserId ToUserId:(NSString*)toUserId
+                           Success:(void (^)(NSString *successTips))success
+                           Failure:(void (^)(NSError *error))failure;
+
+
+/**
  *  @author jxd, 15-08-07 10:08:37
  *
  *  获取最新未读消息数
@@ -280,6 +293,7 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  *  @return 未读消息数
  */
 + (NSInteger)getNewMessageCount;
+
 
 
 #pragma mark - 打开帮助/FAQ

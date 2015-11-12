@@ -29,7 +29,7 @@
     table.dataSource = self;
     [self.view addSubview:table];
     
-    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 50)];
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 60)];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 320, 20)];
     label.font = [UIFont systemFontOfSize:14];
