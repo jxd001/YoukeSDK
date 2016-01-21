@@ -78,7 +78,7 @@ libxml2.dylib （xcode7为libxml2.tbd）
 如需统计客服绩效，则使用下面的方法：
 ```objective-c
 Performance *p = [Performance new];
-p.recordType = @"good";
+p.recordType = @"goods";
 p.recordId = self.courseId;
 [YoukeSDK contactCustomServiceWithViewController:self Performance:p];
 ```
