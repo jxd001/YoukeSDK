@@ -4,11 +4,11 @@
 //
 //  Created by ss on 15/3/23.
 //  Copyright (c) 2015年 zipingfang. All rights reserved.
-//  v1.0.8
+//  v1.0.9
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#import "Performance.h"
 
 /**
  *  @author jxd, 15-09-01 10:09:20
@@ -111,6 +111,16 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
 + (void)registerDeviceToken:(id)deviceToken;
 
 
+/**
+ *  @author jxd, 2016年01月07日18:01:51
+ *
+ *  连接聊天服务，如果当前已经连接，不会重复连接
+ *
+ *  @param
+ */
++ (void)connectChatService;
+
+
 #pragma mark - 联系客服
 
 /**
@@ -121,6 +131,14 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  */
 + (void)contactCustomServiceWithViewController:(UIViewController*)ctrl;
 
+/**
+ *  @author jxd, 15-05-16 16:05:19
+ *
+ *  弹出客服聊天界面
+ *
+ *  @param  performance 用于统计客服绩效
+ */
++ (void)contactCustomServiceWithViewController:(UIViewController*)ctrl Performance:(Performance*)performance;
 
 #pragma mark - 提交商品信息以及订单信息给客服
 
@@ -313,6 +331,10 @@ typedef void(^ORDERCLICK_BLOCK)(NSString *orderId, UIViewController *viewControl
  */
 + (void)remindUserToRegister;
 
+
 @end
+
+
+
 
 
