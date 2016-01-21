@@ -13,6 +13,7 @@
 * 点对点单聊
 * 消息推送
 * 更换皮肤
+* 客服绩效
 
 更新记录：
 * 2015.8.10 增加：点对点单聊功能；
@@ -24,6 +25,7 @@
 * 2015.9.7 增加：绑定devicetoken，实现消息推送功能；
 * 2015.10.10 优化：适配iOS9；
 * 2015.11.7 增加：删除聊天列表中的记录
+* 2016.1.20 增加：客服绩效接口
 
 
 <br>
@@ -60,10 +62,25 @@ libxml2.dylib （xcode7为libxml2.tbd）
 
 <br>
 ### 3、实现客服功能（即时沟通）
+在需要实现聊天服务的页面的viewDidLoad方法中添加代码：
+```objective-c
+- (void)viewDidLoad {
+    //连接聊天服务
+    [YoukeSDK connectChatService];
+}
+```
+
 在需要实现客服聊天功能的地方（如按钮点击事件）中加入以下代码，即可跳转到客服聊天界面，客服列表中的客服人员，需在[YoukeSDK](http://t.youkesdk.com/)后台添加。
 ```objective-c
 //跳转到客服聊天界面
 [YoukeSDK contactCustomServiceWithViewController:self];
+```
+如需统计客服绩效，则使用下面的方法：
+```objective-c
+Performance *p = [Performance new];
+p.recordType = @"good";
+p.recordId = self.courseId;
+[YoukeSDK contactCustomServiceWithViewController:self Performance:p];
 ```
 <center>
 ![2015-06-24/558a12ed91242](http://box.kancloud.cn/2015-06-24_558a12ed91242.png)
